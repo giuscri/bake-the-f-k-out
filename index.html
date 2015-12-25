@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+
+    <link type="text/css" rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <script type="application/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="application/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <section class="Main" ng-app="app" ng-controller="MainCtrl">
+        <header>Bake the f%%k out!</header>
+
+        <article>
+            <div>
+                <input ng-model="k" class="k" type="number" placeholder="..." />
+            </div>
+
+            <div>
+                <span>percent</span>
+            </div>
+
+            <div>
+                <span class="of">of</span>
+            </div>
+
+            <div>
+                <input style="color: {{isNaN(n) ? 'gray' : 'white' }};" ng-model="n" class="n" type="number" placeholder="..."/>
+            </div>
+
+            <div>
+                <span class="is">is</span>
+            </div>
+
+            <div>
+                <span class="p">{{isNaN(k) || isNaN(n) ? '...' : round(k/100*n)}}</span>
+            </div>
+        </article>
+
+        <footer>Designed with <3, <em>less is more</em>. 2016</footer>
+    </section>
+</body>
+</html>
+<!-- vim: set et ts=4 sw=4: -->

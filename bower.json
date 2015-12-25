@@ -1,0 +1,7 @@
+{
+  "name": "percentage",
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
