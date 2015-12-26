@@ -6,54 +6,47 @@ html {
     font-family: 'Fredoka One', cursive;
 }
 
-html body section header {
-    font-size: 2em;
-
+html body div.Main {
     text-align: center;
 
     padding: 0.5em;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 70%;
 }
 
-html body section footer {
+html body div.Main header {
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+html body div.Main footer {
     font-size: 0.7em;
-
-    text-align: center;
-
     padding: 1.5em;
 }
 
-html body section article {
-    /*width: 100%;*/
-
-    font-size: 4em;
-
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
+html body div.Main {
+    font-size: 2em;
 }
 
-html body section article div {
-    display: -ms-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    text-align: center;
-}
-
-html body section article div input {
+html body div.Main div input {
     background-color: #E9423A;
-    border: None;
+    border: none;
     color: white;
 
     font-family: 'Fredoka One', cursive;
     font-size: 1em;
 
     text-align: center;
-   
-    /*
+
     margin-left: auto;
     margin-right: auto;
-    */
-    width: 60%;
+
+    width: 70%;
+}
+
+html body div.Main div input:focus {
+    outline: 0;
 }

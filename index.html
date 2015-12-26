@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8,user-scalable=0" />
 
     <link type="text/css" rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -9,13 +9,12 @@
     <script type="application/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="application/javascript" src="js/main.js"></script>
 </head>
-<body>
-    <section class="Main" ng-app="app" ng-controller="MainCtrl">
-        <header>Bake the f%%k out!</header>
+<body ng-app="app" ng-controller="MainCtrl">
+    <div class="Main">
+        <header><span>Bake the <span>f%%k</span> out!</span></header>
 
-        <article>
             <div>
-                <input ng-model="k" class="k" type="number" placeholder="..." />
+                &nbsp;<input ng-model="k" type="number" placeholder="%%%" />
             </div>
 
             <div>
@@ -23,24 +22,26 @@
             </div>
 
             <div>
-                <span class="of">of</span>
+                <span>of</span>
             </div>
 
             <div>
-                <input ng-model="n" class="n" type="number" placeholder="..."/>
+                &nbsp;<input ng-model="n" type="number" placeholder="XXX" />
             </div>
 
             <div>
-                <span class="is">is</span>
+                <span>is</span>
             </div>
 
             <div>
-                <span class="p">{{isNaN(k) || isNaN(n) ? '...' : round(k/100*n)}}</span>
+                <span>{{isNaN(k) || isNaN(n) ? '???' : round(k/100*n)}}</span>
             </div>
-        </article>
 
-        <footer>Designed with <3, <em>less is more</em>. 2016</footer>
-    </section>
+        <footer>
+            <div>Designed with <3, <em>less is more</em>.</div>
+            <div>2016</div>
+        </footer>
+    </div>
 </body>
 </html>
 <!-- vim: set et ts=4 sw=4: -->
