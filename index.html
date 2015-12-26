@@ -35,7 +35,7 @@
 
             <div>
                 <span>
-                    {{ isNaN(k)||isNaN(n) ? '???' : round(k/100*n) }}
+                    {{ isNaN(k)||isNaN(n) ? '???' : (k*n===0 ? '???' : round(k/100*n)) }}
                 </span>
             </div>
 
