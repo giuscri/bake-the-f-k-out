@@ -11,6 +11,8 @@ html {
     font-family: "Fredoka One", cursive;
 }
 
+/*html body { height: 100%; }*/
+
 html body div.Main {
     text-align: center;
 
@@ -18,8 +20,10 @@ html body div.Main {
 
     margin-left: auto;
     margin-right: auto;
-    
+
     width: 70%;
+    
+    /*height: 40%;*/
 }
 
 html body div.Main header {
@@ -37,7 +41,7 @@ html body div.Main footer {
 
 @media (max-width: 244px) {
     html body div.Main header { font-size: 0.5em; }
-    html body div.Main footer { font-size: 0.5em; }
+    html body div.Main footer { font-size: 0.3em; }
 }
 
 html body div.Main {
