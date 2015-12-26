@@ -2,7 +2,7 @@
   font-family: "Fredoka One";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/fredoka-one.woff") format("woff");
+  src: url("../fonts/fredoka-one.woff") format("woff");
 }
 
 html {
