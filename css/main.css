@@ -39,11 +39,6 @@ html body div.Main footer {
     padding: 1.5em;
 }
 
-@media (max-width: 244px) {
-    html body div.Main header { font-size: 0.5em; }
-    html body div.Main footer { font-size: 0.3em; }
-}
-
 html body div.Main {
     font-size: 2em;
 }
@@ -67,3 +62,14 @@ html body div.Main div input {
 html body div.Main div input:focus {
     outline: 0;
 }
+
+@media (max-width: 244px) {
+    html body div.Main header { font-size: 0.5em; }
+    html body div.Main footer { font-size: 0.3em; }
+}
+
+@media (max-width: 164px) {
+    html body div.Main { font-size: 1.5em; }
+    html body div.Main footer { display: none; }
+}
+
