@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=0.8,user-scalable=0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
 
     <link type="text/css" rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -11,7 +11,7 @@
 </head>
 <body ng-app="app" ng-controller="MainCtrl">
     <div class="Main">
-        <header><span>Bake the <span>f%%k</span> out!</span></header>
+        <header>Bake the <span class="fuck">f%%k</span> out!</header>
 
             <div>
                 &nbsp;<input ng-model="k" type="number" placeholder="%%%" />
@@ -34,12 +34,13 @@
             </div>
 
             <div>
-                <span>{{isNaN(k) || isNaN(n) ? '???' : round(k/100*n)}}</span>
+                <span>
+                    {{ isNaN(k)||isNaN(n) ? '???' : round(k/100*n) }}
+                </span>
             </div>
 
         <footer>
-            <div>Designed with <3, <em>less is more</em>.</div>
-            <div>2016</div>
+            <span>Designed with <3, <em>less is more</em>.&nbsp;2016</span>
         </footer>
     </div>
 </body>
