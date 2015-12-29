@@ -1,5 +1,7 @@
 var app = angular.module('app', []);
 app.controller('MainCtrl', ['$scope', function ($scope) {
+    //$scope.k = '%%%';
+    //$scope.n = 'XXX';
     $scope.round = function (x) {
         return Math.round(x*100)/100;
     };
