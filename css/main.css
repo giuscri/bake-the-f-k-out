@@ -8,9 +8,9 @@
 html {
     background-color: #E9423A;
     color: white;
-    /*font-family: "Fredoka One", cursive;*/
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: "Fredoka One", cursive;
+    /*font-family: sans-serif;*/
+    /*font-weight: bold;*/
 }
 
 /*html body { height: 100%; }*/
