@@ -50,9 +50,9 @@ html body div.Main div input {
     border: none;
     color: white;
 
-    /*font-family: 'Fredoka One', cursive;*/
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    /*font-family: sans-serif;*/
+    /*font-weight: bold;*/
     font-size: 1em;
 
     text-align: center;
